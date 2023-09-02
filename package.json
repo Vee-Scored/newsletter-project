@@ -1,0 +1,9 @@
+{
+  "description": "",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.1",
+    "fontawesome": "^5.6.3",
+    "tailwindcss": "^3.3.3"
+  }
+}

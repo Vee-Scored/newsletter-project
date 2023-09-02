@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-body {
+    @apply h-screen flex justify-center items-center bg-slate-700;
+  }
+
+  .main-wraper {
+    @apply flex max-w-xl bg-white p-2 rounded-lg;
+  }
+}
