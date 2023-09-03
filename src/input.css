@@ -3,11 +3,30 @@
 @tailwind utilities;
 
 @layer components {
+  * {
+    user-select: none;
+    margin: 4px 0;
+  }
+
+  
   .main-body {
     @apply h-screen flex justify-center items-center bg-slate-700;
   }
 
   .main-wraper {
-    @apply flex max-w-xl bg-white p-2 rounded-lg;
+    @apply flex max-w-2xl  bg-white p-2 rounded-lg drop-shadow-2xl;
+  }
+
+  .custom-checkbox {
+    @apply appearance-none w-[15px] h-[15px] border-[1.5px] border-orange-500
+    rounded-full align-middle checked:bg-orange-600;
+  }
+
+  .btn {
+    @apply bg-slate-700 text-white text-xs p-3 w-[100%] rounded-md border-[1.5px] my-2 hover:bg-gradient-to-r from-pink-500 to-orange-500 hover:drop-shadow-2xl border-slate-700 hover:border-orange-500;
+  }
+
+  .btn:hover {
+    box-shadow: rgba(227, 42, 5, 0.615) 0px 5px 15px;
   }
 }

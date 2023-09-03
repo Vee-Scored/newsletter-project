@@ -6,47 +6,70 @@
     <title>Document</title>
     <link rel="stylesheet" href="./dist/output.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
       * {
         box-sizing: border-box;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        font-family: "Roboto Condensed", sans-serif;
+      }
+
+      .custom-checkbox:checked {
+        background-image: url("./src/newsletter-sign-up-with-success-message-main/assets/images/check-solid.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 8px;
       }
     </style>
   </head>
   <body class="main-body">
-    <div class="main-wraper">
-      <div class="left px-6 py-5">
-        <h1 class="font-bold text-[40px]">Stay updated!</h1>
-        <p class="text-xs">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
+    <div
+      class="main-wraper bg-[url(.src/newsletter-sign-up-with-success-message-main/assets/images/check-solid.svg)]"
+    >
+      <div class="left flex justify-center items-center px-7">
         <div>
-          <div>
-            <input type="checkbox" />
-            <span> Product discovery and building what matters </span>
+          <h1 class="font-bold text-[40px]">Stay updated!</h1>
+          <p class="text-xs my-3">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <div class="my-4">
+            <div>
+              <input class="custom-checkbox" type="checkbox" />
+              <span class="text-xs">
+                Product discovery and building what matters
+              </span>
+            </div>
+            <div>
+              <input class="custom-checkbox" type="checkbox" />
+              <span class="text-xs">
+                Measuring to ensure updates are a success
+              </span>
+            </div>
+            <div>
+              <input class="custom-checkbox" type="checkbox" />
+              <span class="text-xs"> And much more! </span>
+            </div>
           </div>
-          <div>
-            <input type="checkbox" />
-            <span> Measuring to ensure updates are a success </span>
-          </div>
-          <div>
-            <input type="checkbox" />
-            <span> And much more! </span>
-          </div>
+          <form action="">
+            <label class="text-xs font-[700]" for="email">Email Address:</label>
+
+            <input
+              class="w-[100%] border-[1.5px] border-slate-700 rounded-md py-1.5 px-3 my-2"
+              type="email"
+              id="email"
+              name="email"
+              placeholder=" email@company.com"
+            />
+
+            <button class="btn drop-shadow-lg">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
         </div>
-        <form action="">
-          <label for="email">Email Address:</label>
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder=" email@company.com"
-          />
-
-          <button>Subscribe to monthly newsletter</button>
-        </form>
       </div>
 
-      <div class="right w-[60%]">
+      <div class="right w-[70%]">
         <img
           src="./src/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg"
           alt="..."
