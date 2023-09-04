@@ -6,27 +6,39 @@
   * {
     user-select: none;
     margin: 4px 0;
+    box-sizing: border-box;
   }
 
-  
   .main-body {
     @apply h-screen flex justify-center items-center bg-slate-700;
   }
 
   .main-wraper {
-    @apply flex max-w-2xl  bg-white p-2 rounded-lg drop-shadow-2xl;
+    @apply flex max-w-2xl  bg-white p-4 rounded-xl drop-shadow-2xl;
   }
 
   .custom-checkbox {
     @apply appearance-none w-[15px] h-[15px] border-[1.5px] border-orange-500
-    rounded-full align-middle checked:bg-orange-600;
+    rounded-full align-middle checked:bg-orange-600 cursor-pointer mr-2;
   }
 
   .btn {
-    @apply bg-slate-700 text-white text-xs p-3 w-[100%] rounded-md border-[1.5px] my-2 hover:bg-gradient-to-r from-pink-500 to-orange-500 hover:drop-shadow-2xl border-slate-700 hover:border-orange-500;
+    @apply bg-slate-800 text-white text-xs p-3 w-[100%] rounded-md border-[1.5px] my-2 hover:bg-gradient-to-r from-pink-500 to-orange-500 hover:drop-shadow-2xl border-slate-700 hover:border-orange-500;
   }
 
   .btn:hover {
     box-shadow: rgba(227, 42, 5, 0.615) 0px 5px 15px;
+  }
+
+  .error {
+    @apply text-xs font-[500] text-orange-700 float-right inline-block pt-[1.5px];
+  }
+
+  .form-input {
+    @apply w-[100%] border-[1.5px] border-slate-700 rounded-md py-1.5 px-3 outline-none placeholder:text-xs;
+  }
+
+  .input-error {
+    @apply w-[100%] border-[1.5px] border-orange-400 text-orange-500 outline-none rounded-md py-1.5 px-3 placeholder:text-orange-500 font-[500] placeholder:text-xs bg-red-100;
   }
 }

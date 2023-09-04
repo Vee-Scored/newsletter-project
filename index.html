@@ -11,6 +11,7 @@
       * {
         box-sizing: border-box;
         font-weight: 500;
+        font-size: 20px;
         font-family: "Roboto", sans-serif;
         font-family: "Roboto Condensed", sans-serif;
       }
@@ -21,13 +22,17 @@
         background-position: center;
         background-size: 8px;
       }
+
+      .error {
+        display: none;
+      }
     </style>
   </head>
   <body class="main-body">
     <div
       class="main-wraper bg-[url(.src/newsletter-sign-up-with-success-message-main/assets/images/check-solid.svg)]"
     >
-      <div class="left flex justify-center items-center px-7">
+      <div class="left flex justify-center items-center px-10 w-[65%]">
         <div>
           <h1 class="font-bold text-[40px]">Stay updated!</h1>
           <p class="text-xs my-3">
@@ -53,9 +58,9 @@
           </div>
           <form action="">
             <label class="text-xs font-[700]" for="email">Email Address:</label>
-
+            <span class="error">Valid email required</span>
             <input
-              class="w-[100%] border-[1.5px] border-slate-700 rounded-md py-1.5 px-3 my-2"
+              class="form-input"
               type="email"
               id="email"
               name="email"
@@ -69,12 +74,14 @@
         </div>
       </div>
 
-      <div class="right w-[70%]">
+      <div class="right w-[55%]">
         <img
           src="./src/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg"
           alt="..."
         />
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
