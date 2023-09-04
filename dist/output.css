@@ -553,6 +553,7 @@ video {
 
 .main-wraper {
   display: flex;
+  height: 90%;
   max-width: 36rem;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
