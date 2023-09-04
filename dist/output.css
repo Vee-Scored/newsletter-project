@@ -553,7 +553,6 @@ video {
 
 .main-wraper {
   display: flex;
-  height: 95%;
   max-width: 42rem;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
@@ -713,10 +712,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.bg-\[url\(\.src\/newsletter-sign-up-with-success-message-main\/assets\/images\/check-solid\.svg\)\] {
-  background-image: url(.src/newsletter-sign-up-with-success-message-main/assets/images/check-solid.svg);
 }
 
 .px-10 {
