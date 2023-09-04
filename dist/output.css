@@ -553,7 +553,7 @@ video {
 
 .main-wraper {
   display: flex;
-  max-width: 42rem;
+  max-width: 36rem;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));

@@ -14,7 +14,7 @@
   }
 
   .main-wraper {
-    @apply flex max-w-2xl  bg-white p-4 rounded-xl drop-shadow-2xl;
+    @apply flex max-w-xl  bg-white p-4 rounded-xl drop-shadow-2xl;
   }
 
   .custom-checkbox {
