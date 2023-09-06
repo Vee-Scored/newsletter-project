@@ -538,7 +538,6 @@ video {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  margin: 4px 0;
   box-sizing: border-box;
 }
 
@@ -764,9 +763,26 @@ video {
 }
 
 @media not all and (min-width: 768px) {
+  .max-md\:hidden {
+    display: none;
+  }
+
+  .max-md\:flex-col {
+    flex-direction: column;
+  }
+
   .max-md\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .max-md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .max-md\:text-center {
+    text-align: center;
   }
 }
 
