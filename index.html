@@ -29,8 +29,17 @@
     </style>
   </head>
   <body class="main-body">
-    <div class="main-wraper">
-      <div class="left flex justify-center items-center px-10 w-[65%]">
+    <div class="main-wraper max-sm:flex-col">
+      <div class="block">
+        <img
+          class="w-[100%] md:hidden"
+          src="../src/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+        />
+      </div>
+      <div
+        class="left flex justify-center items-center px-10 w-[65%] max-sm:w-[100%] max-w-[480px]:px-3 max-md:px-3"
+      >
         <div>
           <h1 class="font-bold text-[40px]">Stay updated!</h1>
           <p class="text-xs my-3">
@@ -72,8 +81,9 @@
         </div>
       </div>
 
-      <div class="right w-[55%]">
+      <div class="right w-[55%] max-sm:hidden">
         <img
+          class=""
           src="./src/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg"
           alt="..."
         />
