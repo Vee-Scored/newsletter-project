@@ -14,7 +14,7 @@
   }
 
   .main-wraper {
-    @apply flex max-w-2xl  bg-white p-4 rounded-xl drop-shadow-2xl max-md:w-[75%] max-md:px-0 max-[480px]:w-[100%];
+    @apply flex max-w-2xl  bg-white p-4 rounded-xl drop-shadow-2xl max-md:w-[75%] max-md:px-0 max-[480px]:w-[100%] max-[480px]:h-screen max-[480px]:rounded-none max-[480px]:py-0;
   }
 
   .custom-checkbox {
